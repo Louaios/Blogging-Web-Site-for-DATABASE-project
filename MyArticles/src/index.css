@@ -1,0 +1,394 @@
+:root {
+  --color : #BA68C8;
+  --bgc : black;
+}
+*{
+  padding: 0;
+  color: white;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+.violet{
+  color: var(--color);
+}
+body{
+  background-color: var(--bgc);
+  width: 100%;
+}
+.login{
+  margin: 0 40px;
+  height: 100vh;
+  background-image: url("../pics/stars1.webp");
+  display: flex;
+  gap: 40px;
+  justify-content : space-between;
+  align-items: center;
+}
+.login img{
+  width: 50%;
+  height: 90%;
+}
+.login .form{
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  width: 100%;
+}
+.log{
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  align-items: center;
+}
+input , select , textarea{
+  width: 100%;
+  margin-bottom: 3px;
+  padding: 6px;
+  color: var(--bgc);
+  border-radius: 5px;
+  border: none;
+}
+option{
+  color: black;
+}
+button{
+  margin: 3px 0;
+  border: none;
+  color: white;
+  background-color: var(--color);
+  padding: 5px;
+  border-radius: 5px;
+  transition: 0.7s;
+}
+button:hover , .comment:hover{
+  cursor: pointer;
+  transform: scale(1.02);
+}
+input:focus , select:focus , textarea:focus{
+  outline: none;
+  border: none;
+}
+select:hover{
+  cursor: pointer;
+}
+a{
+  text-decoration: none;
+}
+a.aa{
+  text-decoration: none;
+  color: var(--color);
+}
+
+.home header.main{
+  background-color: rgba(255, 255, 255, 0.068);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 7px 20px;
+}
+.notif:hover , .profile:hover{
+  cursor: pointer;
+}
+.notif , .profile{
+  transition: 0.5s;
+  width:34px ;
+  height: 34px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  text-align: center;
+  overflow: hidden;
+  background-color: rgba(67, 57, 57, 0.71);
+}
+.profilee{
+  transition: 0.5s;
+  width:37px ;
+  height: 37px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  text-align: center;
+  overflow: hidden;
+  background-color: rgba(67, 57, 57, 0.71);
+}
+.notif:hover , .profile:hover{
+  background-color: rgba(91, 88, 88, 0.813);
+}
+.search{
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+.srch{
+  width:34px ;
+  height: 34px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  text-align: center;
+  background-color: rgba(66, 65, 65, 0.299);
+}
+.srch:hover{
+  cursor: pointer;
+}
+.srch img , .notif img{
+  width: 50%;
+  height: 50%;
+}
+.sidebar{
+  display: flex;
+  justify-content: flex-end;
+  gap: 20px;
+  margin-right: 20px;
+}
+.profile img , .profilee img{
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.search input{
+  padding: 7px;
+  padding-left: 20px;
+  color: white;
+  background-color: rgba(66, 65, 65, 0.299);
+  border: none;
+  border-radius: 20px;
+  width: 400px;
+}
+
+
+.feeds{
+  margin: 20px;
+}
+.article , .add{
+  margin: 20px 0;
+  background-color: rgba(255, 255, 255, 0.068);
+  border-radius: 5px;
+}
+.article .about{
+  padding: 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.article .actions{
+  padding: 10px;
+  background-color:  rgba(255, 255, 255, 0.068);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.article button , .comment{
+  height: 25px;
+  background-color: var(--color);
+  display: flex;
+  padding: 0 10px;
+  justify-content: flex-start;
+  border-radius: 5px;
+  gap: 10px;
+  align-items: center;
+}
+button.report{
+  background-color: rgba(255, 0, 0, 0.747);
+  color: white;
+}
+.publisherrr{
+background-color: rgba(57, 51, 51, 0.427);
+display: flex;
+justify-content: space-between;
+align-items: center;
+padding-right: 10px;
+}
+ 
+
+.add{
+padding: 10px;
+}
+.add textarea , .add input{
+  margin: 5px 0px;
+  width: 100%;
+  padding: 10px;
+}
+
+.co{
+  margin: 10px 10px 10px 0;
+  display: flex;
+  align-items: start;
+  justify-content: flex-start;
+  gap: 10px;
+}
+.co .comt{
+  background-color: rgba(128, 128, 128, 0.244);
+  padding: 10px 15px;
+  border-radius: 10px;
+}
+.co .profile{
+  margin-top: 5px;
+}
+.co h4{
+  margin-bottom: 5px;
+  font-weight: 500;
+}
+.co p{
+  font-size: 13px;
+  font-weight: 300;
+  color: rgba(255, 255, 255, 0.502);
+}
+
+
+.sprofile{
+  background-color: rgba(57, 51, 51, 0.427);
+  padding: 20px;
+  gap: 20px;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  border-radius: 50px 0px 0px 50px;
+}
+.sprofile .prpic{
+  width: 70px;
+  height: 70px;
+  overflow: hidden;
+  border-radius: 50%;
+}
+.publisher header{
+  border: 2px solid rgba(71, 69, 69, 0.354);
+}
+header .bgimg{
+  max-height: 300px;
+  min-height: 200px;
+  border: 2px solid #463c3c77;
+  background-image: url("../pics/stars1.webp");
+  position: relative;
+}
+.sprofile img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 50%;
+}
+.bgimg::after{
+  content: "";
+  width: 100px;
+  height: 100px;
+  background-image: url("../pics/yami.webp");
+  background-size: cover;
+  background-position: center;
+  border-radius: 50%;
+  position: absolute;
+  top: 140px;
+  border: 2px solid #463c3c77;
+  left: 20px;
+}
+.info h2 , .info p , .info label{
+  margin-left: 20px;
+}
+.info textarea{
+  border: none;
+  color: rgba(255, 255, 255, 0.753);
+  padding: 10px;
+  background-color: hsla(0, 4%, 11%, 0.863);
+  min-height: 90px;
+  max-height: 400px;
+  width: 98%;
+  margin: 8px;
+}
+
+.info{
+  padding-top: 50px;
+  background-color: rgba(63, 62, 62, 0.575);
+}
+
+
+.admin{
+  display: flex;
+}
+.admin aside{
+  position: fixed;
+}
+.admin main{
+  flex: 1;
+  margin-left: 220px;
+}
+.admin aside ul{
+  display: flex;
+  justify-content: flex-start;
+  flex-direction: column;
+  align-items: flex-start;
+  height: 85%;
+  position: relative;
+  gap: 10px;
+}
+.admin aside h1{
+  font-size: 30px;
+  padding: 20px;
+}
+.admin li {
+  list-style: none;
+}
+.admin ul a{
+  transition: 0.8s;
+  list-style: none;
+  background-color: rgba(53, 53, 53, 0.568);
+  width: 95%;
+  padding: 10px 20px;
+  margin: 0 5px;
+  border-radius: 10px;
+}
+.admin ul a.active{
+  background-color: #3e0f469e;
+}
+.admin aside{
+  height: 100%;
+  background-image: linear-gradient( rgba(52, 49, 49, 0.182),rgba(59, 55, 55, 0.631));
+}
+.error{
+  margin-top: 200px;
+  text-align: center;
+  height: 100%;
+  width: 100%;
+}
+
+.admin ul .logout{
+  background-color: rgba(255, 0, 0, 0.444);
+  position: absolute;
+  bottom: 10px;
+}
+
+.pop{
+  background-color: black;
+  height: 80vh;
+  width: 60vw;
+  border-radius: 20px;
+  border: 2px rgb(64, 61, 61) solid;
+  overflow: auto;
+  padding: 20px;
+  position: fixed;
+  top: 0;
+  left: 240px;
+  margin-top: 60px;
+  box-shadow: 0px 0px 1000px 1000px rgba(7, 7, 7, 0.644);
+}
+.like{
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 5px;
+}
+.likeit{
+  background-color: transparent;
+  border: none;
+  border-radius: 0;
+}
+
+
+
+@media screen and (max-width : 850px) {
+  .search input{
+    width: 200px;
+  }
+}
